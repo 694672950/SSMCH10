@@ -20,6 +20,7 @@ public class EnCodingFilter implements Filter {
             request.setCharacterEncoding(charset);
             response.setCharacterEncoding(charset);
             response.setContentType(contentType);
+            int i=0;
             chain.doFilter(request,response);
     }
 
